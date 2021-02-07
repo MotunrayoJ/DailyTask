@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+    <title>Form</title>
+    </head>
+    <body>
+        <style>
+            body{
+                background-color: #FAFAD2;
+            }
+            form{
+                background-color: white;
+                width: 70%;
+                padding: 1em;
+                margin:auto;
+            }
+            button{
+                background-color:red;
+                color: white;
+                padding: 5px;
+            border-radius: 2px;
+            border: none;
+            }
+            .submitbutton{
+                background-color: red;
+                justify-content: center;
+                padding: 5px;
+                margin: auto;
+            }
+            h1{
+                font-size: 1.5em;
+            }
+            /* fieldset{
+                border: lightgray;
+                margin: 10px;
+            } */
+        </style>
+        <form>
+            <center>
+            <h1>Application For Permission To Date Abiola Gbode</h1>
+        </center>
+            <p></p>
+    <b>Note: Form is to be completed at least two days prior to date</b>
+    <p></p>
+    <fieldset>
+<legend><h1>Personal Details</h1></legend>
+<p></p>
+Firstname: <input type= "text" placeholder="Enter Firstname here" required/>
+<p></p>
+Address: <input type="text" placeholder="Enter Address here" required/>
+<p></p>
+Email: <input type="text" placeholder="Enter Email here" required/>
+<p></p>
+Phone Number: <input type="number" placeholder="Enter 10 digit number"/>
+<p></p>
+IQ: <input type= "text" placeholder="Enter IQ here" required/>
+<p></p>
+<label for= "Gender"> Gender</label>
+<p>
+    <input type="radio" name="Gender" value="male" checked> Male<br>
+    <input type="radio" name="Gender" value="female" checked> Female<br> 
+    <input type="radio" name="Gender" value="other" checked> Other<br>
+</p>
+<p></p>
+Date of Proposed Outing: <input type="date" required/>
+</fieldset>
+<p></p>
+<fieldset>
+<label for= "Check All That Apply"> Check All That Apply</label> <br>
+<input type="checkbox" name="Check All That Apply" value="I am beautiful" > I am beautiful<br>
+    <input type="checkbox" name="Check All That Apply" value="Abiola is one year older than me" > Abiola is one year older than me<br> 
+    <input type="checkbox" name="Check All That Apply" value="I own a tecno phone" > I own a tecno phone<br>
+    <input type="checkbox" name="Check All That Apply" value="I work full time" checked> I work full time<br>
+    <input type="checkbox" name="Check All That Apply" value="My parents are rich" checked>My parents are rich<br>
+    <input type="checkbox" name="Check All That Apply" value="Is the date at a lit public location?" checked>Is the date at a lit public location<br>
+   <p></p>
+</fieldset>
+<p></p>
+<fieldset>
+   <select>Persuasion:<select>
+       <option>Left Wing</option>
+       <option>Right Wing</option>
+   </select>
+   Education Level Completed: <select>
+       <option> Secondary</option>
+       <option>Primary</option>
+       <option>University</option>
+   </select>
+</fieldset>
+   <p></p>
+   <fieldset>
+   <legend><b>Essay Section</b></legend>
+   <p>
+       In 50 words, explain why you want to date Abiola
+   </p>
+   
+   <textarea rows="4" cols="25" placeholder="Enter Text Here"></textarea>
+<p></p>
+Please upload contact details for 2 references
+<p>
+    <textarea rows="4" cols="25" placeholder="Enter Text Here"></textarea>
+</p>
+Upload Police Clearance Certificate, Bank Clearance and Medical Certificate here: <button id="submit" value="submit">Attach Files</button>
+</fieldset>
+<p>
+    <!-- <div class="viable">
+<input type=" file" value="Send Your Application" name="image"/>
+</div> -->
+
+    <center>
+<button id="submit" value="submit">Send Your Application</button>
+</center>
+</form>
+</body>
+</html>

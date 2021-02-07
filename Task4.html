@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Format</title>
+</head>
+<center>
+<body>
+<h1>Good Vibes Form</h1>
+</body>
+</center>
+<body>
+    <style> 
+body{
+background-color: skyblue;
+text-align: center;
+}     
+button{
+  
+    background-color: skyblue;
+}
+.input-field{
+    width: 280px;
+    height: 20px;
+    margin: 10px;
+}
+.outside{
+    width: 800px;
+    background-color: #f3f3f3;
+    padding: 10px;
+    margin:auto;
+}
+.naming{
+display: inline-block;
+text-align: right;
+width: 40%;
+padding: 5px;
+margin-top: 10px;
+vertical-align: top;
+}
+.field{
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+    vertical-align: middle;
+}
+.dropdown{
+    height: 35px;
+    width: 140px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 4px;
+    border: 1px solid #c0c0c0;
+    }
+   .form{
+      
+   }
+</style>
+<div class="outside">
+<form>
+<p><b>Tell us something that happened to you today.</b></p>
+<div class="naming">
+Name 
+</div>
+<div class="field"><input type= "text" class="input-field" placeholder="Enter name" required/>
+</div>
+<div class="naming">
+Email</div>
+<div class="field"> <input type="text" class="input-field" placeholder="Enter your email address" required/>
+</div>
+<div class="naming">
+On a scale of 10, how good was it?</div>
+<div class="field"><input type="text" class="input-field" placeholder="Enter number between 1 and 10" required/>
+</div>
+<div class="naming">
+When did it happen?
+</div>
+<select class="dropdown">
+<option>At home</option>
+<option>night</option>
+</select>
+<div class="naming">
+<label for= "At what time did it happen?"> At what time did it happen? </label><br>    
+</div>
+<input type= "checkbox" name= "At what time did it happen?" value="morning"> morning<br>
+<contain>
+<input type= "checkbox" name= "At what time did it happen?" value="afternoon"> afternoon<br> 
+<input type= "checkbox" name= "At what time did it happen?" value="evening"> evening<br> 
+</contain>
+<p>
+<label for= "What did you experience today?">What did you experience today? </label><br>(Select all that apply)<br>
+<input type= "checkbox" name= "What did you experience today?" value="excited"> excited<br>
+<input type= "checkbox" name= "What did you experience today?" value="humble"> humble<br> 
+<input type= "checkbox" name= "What did you experience today?" value="elated"> elated<br> 
+<input type= "checkbox" name= "What did you experience today?" value="loved"> loved<br> 
+<input type= "checkbox" name= "What did you experience today?" value="enthusiatic"> enthusiastic<br> 
+<p></p>
+Please describe your experience.<textarea rows="2" cols="10" placeholder="an"></textarea>
+</p>
+</naming>
+
+<button id="submit" value="Submit"> Submit</button>
+
+</form>
+</div>
+</body>
+</html>
