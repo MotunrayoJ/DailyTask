@@ -3,16 +3,16 @@
 <head>
 <title>Form Format</title>
 </head>
-<center>
+<!-- <center> -->
 <body>
-<h1>Good Vibes Form</h1>
+<h1 align="center">Good Vibes Form</h1>
 </body>
-</center>
+<!-- </center> -->
 <body>
     <style> 
 body{
 background-color: skyblue;
-text-align: center;
+/* text-align: center; */
 }     
 button{
   
@@ -28,6 +28,20 @@ button{
     background-color: #f3f3f3;
     padding: 10px;
     margin:auto;
+}
+.checkme{
+    display: inline-block;
+text-align: right;
+width: 40%;
+position: inherit;
+vertical-align: top;
+}
+.checkmme{
+    display: inline-block;
+text-align: center;
+width: 95%;
+position: inherit;
+vertical-align: top;
 }
 .naming{
 display: inline-block;
@@ -54,10 +68,16 @@ vertical-align: top;
    .form{
       
    }
+   .checkbov{
+       align-content: right;
+   }
+   checkbox{
+    align-content: right;
+   }
 </style>
 <div class="outside">
 <form>
-<p><b>Tell us something that happened to you today.</b></p>
+<p align="center"><b>Tell us something that happened to you today.</b></p>
 <div class="naming">
 Name 
 </div>
@@ -78,27 +98,37 @@ When did it happen?
 <option>At home</option>
 <option>night</option>
 </select>
-<div class="naming">
-<label for= "At what time did it happen?"> At what time did it happen? </label><br>    
+<div class="checkme">
+<label for= "At what time did it happen?"> At what time did it happen? </label>  
+</div>  
+<br>
+<div class="checkmme" align="center">
+    <input type="checkbox"  value="Morning" name="Morning">Morning<br>
+    <input type="checkbox"  value="Morning" name="Afternoon">Afternoon<br>
+    <input type="checkbox"  value="Morning" name="Evening">Evening
+<!-- <input type= "checkbox" class="checkboxme" name= "At what time did it happen?" value="morning"> morning
+<input type= "checkbox" class="checkboxme" name= "At what time did it happen?" value="afternoon"> afternoon 
+<input type= "checkbox" class="checkboxme" name= "At what time did it happen?" value="evening"> evening<br>  -->
 </div>
-<input type= "checkbox" name= "At what time did it happen?" value="morning"> morning<br>
-<contain>
-<input type= "checkbox" name= "At what time did it happen?" value="afternoon"> afternoon<br> 
-<input type= "checkbox" name= "At what time did it happen?" value="evening"> evening<br> 
-</contain>
 <p>
+    <div class="checkme">
 <label for= "What did you experience today?">What did you experience today? </label><br>(Select all that apply)<br>
+    </div>
+    <div class="checkmme">
 <input type= "checkbox" name= "What did you experience today?" value="excited"> excited<br>
 <input type= "checkbox" name= "What did you experience today?" value="humble"> humble<br> 
 <input type= "checkbox" name= "What did you experience today?" value="elated"> elated<br> 
 <input type= "checkbox" name= "What did you experience today?" value="loved"> loved<br> 
 <input type= "checkbox" name= "What did you experience today?" value="enthusiatic"> enthusiastic<br> 
+</div>
 <p></p>
+<div class="checkmme">
 Please describe your experience.<textarea rows="2" cols="10" placeholder="an"></textarea>
 </p>
 </naming>
 
 <button id="submit" value="Submit"> Submit</button>
+</div>
 
 </form>
 </div>
